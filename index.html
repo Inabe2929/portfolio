@@ -30,7 +30,8 @@ header p{color:var(--sub);margin-top:4px}
 
 /* before / after */
 .demo{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--grid)}
-.demo > div{padding:20px}
+.demo > div{padding:20px;min-width:0}
+.sheet-scroll{overflow-x:auto}
 .demo .before{background:var(--head);border-right:1px solid var(--grid)}
 .demo h2{font-size:14px;font-weight:700;color:var(--sub);margin-bottom:12px}
 .file{margin-bottom:14px}
@@ -78,8 +79,10 @@ footer{margin-top:72px;padding:24px 0 40px;border-top:1px solid var(--grid);font
   .demo .before{border-right:none;border-bottom:1px solid var(--grid)}
   .work{grid-template-columns:1fr;gap:14px}
   .can{grid-template-columns:1fr}
-  .sheet{font-size:12.5px}
-  .sheet th,.sheet td{padding:5px 5px}
+  .demo > div{padding:16px}
+  .sheet{font-size:12px}
+  .sheet th,.sheet td{padding:5px 4px}
+  .file span{display:block;margin-left:0}
 }
 </style>
 </head>
@@ -105,6 +108,7 @@ footer{margin-top:72px;padding:24px 0 40px;border-top:1px solid var(--grid);font
   </div>
   <div class="after">
     <h2>ツールが作る集計表（月別×店舗・円）</h2>
+    <div class="sheet-scroll">
     <table class="sheet">
       <tr><th>月</th><th>新宿店</th><th>横浜店</th><th>渋谷店</th><th>合計</th></tr>
       <tr><td>2026-07</td><td>585,700</td><td>578,690</td><td>564,190</td><td>1,728,580</td></tr>
@@ -112,6 +116,7 @@ footer{margin-top:72px;padding:24px 0 40px;border-top:1px solid var(--grid);font
       <tr><td>2026-09</td><td>646,510</td><td>549,620</td><td>635,700</td><td>1,831,830</td></tr>
       <tr class="total"><td>合計</td><td>1,769,380</td><td>1,719,940</td><td>1,814,230</td><td>5,303,550</td></tr>
     </table>
+    </div>
     <ul class="flags" aria-label="要確認として出力された行">
       <li>渋谷店 278行目：日付「2026/08/32」が存在しない</li>
       <li>新宿店 282行目：数量が「三」と漢字で入力されている</li>
