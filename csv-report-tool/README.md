@@ -31,8 +31,8 @@ py csv_report.py 入力フォルダ -o 出力.xlsx
 ```
 
 ## デモ
-`py make_sample_data.py` を実行すると、わざと形式をバラバラにし、ミスを6件仕込んだ3店舗分（3か月）のCSVが作られます。
-ツールはこの3ファイル・820件を統合し、仕込んだ6件をすべて「要確認」に出します。→ `demo_report.xlsx`
+`py make_sample_data.py` を実行すると、わざと形式をバラバラにし、ミスを5件仕込んだ3店舗分（3か月）のCSVが作られます。
+ツールはこの3ファイル・820件を統合し、仕込んだ5件をすべて「要確認」に出します。→ `demo_report.xlsx`
 
 ## 動作環境
 Python 3.10以上、openpyxl（`py -m pip install openpyxl`）

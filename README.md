@@ -12,7 +12,7 @@ Excel・CSV作業の自動化や、小規模なWebサイト制作を承ってい
 - 文字コード（Shift_JIS／UTF-8）、列名の表記ゆれ、日付形式の違いを自動で吸収
 - 月別×店舗の集計表とグラフ、商品ランキングを自動作成
 - 重複や入力ミスは捨てずに「要確認」シートに一覧で出力
-- デモ：形式の違う3店舗分のCSV（820件）を統合し、仕込んだミス6件をすべて検出 → [demo_report.xlsx](./csv-report-tool/demo_report.xlsx)
+- デモ：形式の違う3店舗分のCSV（820件）を統合し、仕込んだミス5件をすべて検出 → [demo_report.xlsx](./csv-report-tool/demo_report.xlsx)
 
 ### 2. 整体院のランディングページ（HTML / CSS）
 → [デモを見る](https://inabe2929.github.io/portfolio/lp-sample/)　｜　[ソース](./lp-sample/)
