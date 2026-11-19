@@ -3,257 +3,296 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>整体院 こもれび | 肩こり・腰痛の根本改善（制作サンプル）</title>
-<meta name="description" content="デスクワークの肩こり・腰痛にお悩みの方へ。初回カウンセリング付き60分コース。※架空の店舗による制作サンプルです。">
+<title>こもれび整体院｜デスクワークの肩こり・腰痛（制作サンプル）</title>
+<meta name="description" content="座りっぱなしの肩こり・腰痛を、座り方から見直す整体院。初回はカウンセリング込み60分。※架空の店舗による制作サンプルです。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=BIZ+UDPMincho:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --green:#3f6b4f; --green-dk:#2c4d38; --leaf:#e9f1e6; --cream:#faf7f0;
-  --ink:#2b2b2b; --sub:#666; --accent:#e07a3f; --line:#e3ddd0; --radius:16px;
+  --paper:#fcfcfa;
+  --ink:#1f2328;
+  --indigo:#1f3354;
+  --sub:#5c636b;
+  --rule:#d5d8d2;
+  --panel:#eef1f0;
+  --marker:#f2d64b;
+  --gothic:"BIZ UDPGothic",sans-serif;
+  --mincho:"BIZ UDPMincho",serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--cream);line-height:1.85;font-size:16px}
-img,svg{display:block;max-width:100%}
-a{color:inherit}
-.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:"Zen Maru Gothic",sans-serif;line-height:1.4}
-.sample{background:#333;color:#fff;text-align:center;font-size:12px;padding:6px 16px}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--gothic);font-size:16px;line-height:1.9;letter-spacing:.02em}
+a{color:var(--indigo)}
+a:focus-visible,button:focus-visible,input:focus-visible+span{outline:3px solid var(--indigo);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.note-sample{font-size:12px;color:var(--sub);text-align:center;padding:6px 16px;border-bottom:1px solid var(--rule)}
 
 /* header */
-header{position:sticky;top:0;z-index:10;background:rgba(250,247,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:"Zen Maru Gothic";font-weight:700;font-size:20px;color:var(--green);text-decoration:none;display:flex;gap:8px;align-items:center}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border-radius:999px;padding:12px 28px;box-shadow:0 4px 0 #b85e2c;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 #b85e2c}
-.btn.sm{padding:8px 18px;font-size:14px}
-.btn.lg{padding:18px 44px;font-size:18px}
+.site-head{border-bottom:1px solid var(--rule)}
+.site-head .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:16px}
+.name{font-family:var(--mincho);font-weight:700;font-size:22px;color:var(--indigo);text-decoration:none;letter-spacing:.08em}
+.head-tel{font-size:14px;color:var(--sub);text-align:right}
+.head-tel b{display:block;font-size:20px;color:var(--ink);letter-spacing:.04em}
 
 /* hero */
-.hero{background:linear-gradient(160deg,var(--leaf) 0%,var(--cream) 70%);padding:72px 0 80px;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
-.tag{display:inline-block;background:var(--green);color:#fff;font-size:13px;border-radius:999px;padding:4px 14px;margin-bottom:16px}
-.hero h1{font-size:clamp(28px,4.4vw,44px);color:var(--green-dk);margin-bottom:20px}
-.hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,#f6d8a8 62%)}
-.hero p{color:var(--sub);margin-bottom:28px}
-.offer{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.price{font-family:"Zen Maru Gothic";color:var(--accent);font-weight:700}
-.price s{color:var(--sub);font-size:14px;margin-right:6px}
-.price b{font-size:34px}
-.hero-art{aspect-ratio:1;border-radius:50% 46% 52% 48%;background:var(--green);position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 380px;gap:56px;padding-top:56px;padding-bottom:64px;align-items:start}
+.hero h1{font-family:var(--mincho);font-weight:700;font-size:clamp(30px,4.2vw,42px);line-height:1.5;color:var(--indigo);letter-spacing:.04em}
+.lead{margin-top:24px;max-width:30em}
+.hero-meta{margin-top:28px;font-size:15px;color:var(--sub)}
+.hero-meta strong{color:var(--ink)}
+
+/* the intake form */
+.monshin{background:#fff;border:1px solid var(--rule);padding:24px 24px 20px;position:relative}
+.monshin::before{content:"";position:absolute;inset:6px;border:1px solid var(--rule);pointer-events:none}
+.monshin h2{font-family:var(--mincho);font-size:18px;font-weight:700;color:var(--indigo);border-bottom:2px solid var(--indigo);padding-bottom:8px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:baseline}
+.monshin h2 small{font-family:var(--gothic);font-weight:400;font-size:12px;color:var(--sub)}
+.monshin p.hint{font-size:13px;color:var(--sub);margin-bottom:8px}
+.monshin label{display:flex;gap:12px;align-items:flex-start;padding:9px 2px;border-bottom:1px dashed var(--rule);cursor:pointer;line-height:1.6}
+.monshin input{position:absolute;opacity:0;width:1px;height:1px}
+.monshin label span{display:flex;gap:12px;align-items:flex-start}
+.monshin label span::before{content:"";flex:none;width:18px;height:18px;border:1.5px solid var(--indigo);margin-top:3px;background:#fff}
+.monshin input:checked+span::before{background:linear-gradient(45deg,transparent 42%,var(--indigo) 42% 58%,transparent 58%),linear-gradient(-45deg,transparent 42%,var(--indigo) 42% 58%,transparent 58%)}
+.monshin output{display:block;margin-top:14px;font-size:14px;min-height:3.2em;color:var(--ink)}
+.monshin output b{font-size:17px;color:var(--indigo)}
+
+/* buttons */
+.btn{display:inline-block;background:var(--marker);color:var(--ink);font-weight:700;text-decoration:none;padding:14px 28px;border:2px solid var(--ink);font-size:16px;letter-spacing:.06em}
+.btn:hover{background:#ffe35c}
+.monshin .btn{display:block;text-align:center;margin-top:12px}
 
 /* sections */
-section{padding:88px 0}
-.head{text-align:center;margin-bottom:48px}
-.head small{color:var(--accent);font-weight:700;letter-spacing:.15em}
-.head h2{font-size:clamp(24px,3.2vw,32px);color:var(--green-dk)}
+section{padding:72px 0;border-top:1px solid var(--rule)}
+h2.sec{font-family:var(--mincho);font-weight:700;font-size:26px;color:var(--indigo);letter-spacing:.06em;margin-bottom:28px}
+.prose{max-width:34em}
+.prose p+p{margin-top:1em}
 
-.worries{background:#fff}
-.worries ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:760px;margin:0 auto}
-.worries li{background:var(--cream);border-radius:12px;padding:16px 20px 16px 52px;position:relative}
-.worries li::before{content:"";position:absolute;left:20px;top:22px;width:18px;height:18px;border-radius:4px;border:2px solid var(--green)}
-.worries li::after{content:"";position:absolute;left:25px;top:24px;width:7px;height:11px;border:solid var(--accent);border-width:0 3px 3px 0;transform:rotate(45deg)}
-.answer{text-align:center;margin-top:40px;font-family:"Zen Maru Gothic";font-size:22px;color:var(--green-dk)}
+.greeting{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:start}
+.portrait{aspect-ratio:3/4;background:var(--panel);display:grid;place-items:center;color:var(--sub);font-size:13px;text-align:center;line-height:1.6}
+.sign{margin-top:20px;font-family:var(--mincho);text-align:right;max-width:34em}
 
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.card{background:#fff;border-radius:var(--radius);padding:32px 28px;border:1px solid var(--line)}
-.num{font-family:"Zen Maru Gothic";font-size:40px;color:var(--leaf);-webkit-text-stroke:1.5px var(--green);line-height:1}
-.card h3{font-size:19px;margin:12px 0 10px;color:var(--green-dk)}
-.card p{color:var(--sub);font-size:15px}
+.flow{list-style:none;counter-reset:f;max-width:40em}
+.flow li{counter-increment:f;display:grid;grid-template-columns:56px 1fr;padding:16px 0;border-bottom:1px solid var(--rule)}
+.flow li::before{content:counter(f);font-family:var(--mincho);font-size:28px;color:var(--indigo);line-height:1.2}
+.flow h3{font-size:17px}
+.flow p{color:var(--sub);font-size:15px}
+.flow .min{font-size:13px;color:var(--sub);margin-left:8px;font-weight:400}
 
-.flow{background:var(--leaf)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
-.step{background:#fff;border-radius:var(--radius);padding:24px 20px;text-align:center;position:relative}
-.step::before{counter-increment:s;content:"STEP " counter(s);display:block;color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.1em}
-.step h3{font-size:17px;margin:6px 0}
-.step p{font-size:14px;color:var(--sub)}
+table{border-collapse:collapse;width:100%}
+.price{max-width:40em}
+.price th,.price td{padding:14px 4px;border-bottom:1px solid var(--rule);text-align:left;font-weight:400;vertical-align:top}
+.price td{text-align:right;white-space:nowrap;font-weight:700}
+.price small{display:block;color:var(--sub);font-size:13px}
+.price tr.first th{font-weight:700}
+.price-note{margin-top:14px;font-size:14px;color:var(--sub)}
 
-.menu table{width:100%;max-width:760px;margin:0 auto;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden}
-.menu th,.menu td{padding:18px 24px;border-bottom:1px solid var(--line);text-align:left}
-.menu td:last-child{text-align:right;font-weight:700;white-space:nowrap}
-.menu tr.hl{background:#fff6ee}
-.menu .note{text-align:center;color:var(--sub);font-size:14px;margin-top:16px}
-.badge{display:inline-block;font-size:11px;background:var(--accent);color:#fff;border-radius:4px;padding:1px 8px;margin-left:8px;vertical-align:middle}
+.hours{max-width:40em;font-size:15px;text-align:center}
+.hours th,.hours td{border:1px solid var(--rule);padding:10px 4px}
+.hours thead th{background:var(--panel);font-weight:700}
+.hours tbody th{text-align:left;padding-left:12px;font-weight:400;white-space:nowrap}
+.hours .off{color:#9aa0a6}
+.hours-note{margin-top:12px;font-size:14px;color:var(--sub)}
 
-.voice{background:#fff}
-.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.voices blockquote{background:var(--cream);border-radius:var(--radius);padding:28px;font-size:15px}
-.voices cite{display:block;margin-top:12px;font-style:normal;color:var(--sub);font-size:13px}
-.disclaimer{text-align:center;font-size:12px;color:var(--sub);margin-top:16px}
+.voices{max-width:40em}
+.voices blockquote{padding:20px 0;border-bottom:1px solid var(--rule)}
+.voices blockquote p{font-size:16px}
+.voices cite{display:block;margin-top:6px;font-style:normal;font-size:13px;color:var(--sub)}
+.voices-note{margin-top:12px;font-size:12px;color:var(--sub)}
 
-.faq details{max-width:760px;margin:0 auto 12px;background:#fff;border-radius:12px;border:1px solid var(--line)}
-.faq summary{cursor:pointer;padding:18px 48px 18px 24px;font-weight:700;list-style:none;position:relative}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::before{content:"Q.";color:var(--accent);margin-right:8px}
-.faq summary::after{content:"+";position:absolute;right:24px;font-size:22px;color:var(--green);top:12px}
-.faq details[open] summary::after{content:"−"}
-.faq details p{padding:0 24px 20px 24px;color:var(--sub)}
+.faq{max-width:40em}
+.faq dt{font-weight:700;padding-top:18px}
+.faq dd{color:var(--sub);padding:4px 0 18px;border-bottom:1px solid var(--rule)}
 
-.cta{background:var(--green);color:#fff;text-align:center}
-.cta h2{font-size:clamp(24px,3.4vw,34px);margin-bottom:12px}
-.cta p{opacity:.9;margin-bottom:32px}
-.cta .tel{margin-top:20px;font-size:14px;opacity:.85}
+.booking{background:var(--indigo);color:#fff;border-top:none}
+.booking h2.sec{color:#fff}
+.booking p{max-width:34em}
+.booking .btn{margin-top:28px}
+.booking .tel{margin-top:20px;font-size:15px}
+.booking .tel b{font-size:22px;letter-spacing:.04em}
 
-.access .wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
-.access dl{display:grid;grid-template-columns:96px 1fr;gap:12px 16px}
-.access dt{font-weight:700;color:var(--green)}
-.map{aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#e8e3d6 0 12px,#efeadf 12px 24px);border-radius:var(--radius);display:grid;place-items:center;color:var(--sub);font-size:14px}
+.access .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.access dl{display:grid;grid-template-columns:5em 1fr;gap:10px 16px;font-size:15px}
+.access dt{color:var(--sub)}
+.map{aspect-ratio:4/3;background:var(--panel);display:grid;place-items:center;color:var(--sub);font-size:13px}
 
-footer{background:var(--green-dk);color:#cfe0d3;text-align:center;padding:28px 0;font-size:13px}
+footer{padding:28px 0 32px;font-size:13px;color:var(--sub);border-top:1px solid var(--rule)}
 
-.fixed-cta{display:none}
+.sticky-book{display:none}
 
 @media (max-width:820px){
-  .hero .wrap,.access .wrap{grid-template-columns:1fr}
-  .hero-art{width:100%;max-width:260px;margin:0 auto;order:-1}
-  .cards,.voices{grid-template-columns:1fr}
-  .steps{grid-template-columns:repeat(2,1fr)}
-  .worries ul{grid-template-columns:1fr}
-  section{padding:64px 0}
-  header .btn{display:none}
-  .fixed-cta{display:block;position:fixed;left:0;right:0;bottom:0;padding:10px 16px;background:rgba(255,255,255,.95);border-top:1px solid var(--line);z-index:20;text-align:center}
-  .fixed-cta .btn{display:block}
+  .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:36px}
+  .greeting{grid-template-columns:1fr;gap:20px}
+  .portrait{max-width:160px}
+  .access .wrap{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .head-tel{display:none}
+  .sticky-book{display:block;position:fixed;left:0;right:0;bottom:0;background:var(--paper);border-top:1px solid var(--rule);padding:10px 16px;z-index:5}
+  .sticky-book .btn{display:block;text-align:center}
   footer{padding-bottom:96px}
+}
+@media (max-width:420px){
+  .hours{font-size:13px}
+  .hours tbody th{padding-left:6px}
 }
 </style>
 </head>
 <body>
-<div class="sample">※ これは Web 制作のサンプルページです。店舗・人物・口コミはすべて架空のものです。</div>
+<p class="note-sample">Web制作のサンプルページです。店舗・人物・口コミはすべて架空のものです。</p>
 
-<header>
+<header class="site-head">
   <div class="wrap">
-    <a class="logo" href="#">
-      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3c6 4 9 9 9 14a9 9 0 0 1-18 0C5 12 8 7 14 3z" fill="#3f6b4f"/><path d="M14 9v16" stroke="#faf7f0" stroke-width="2"/></svg>
-      整体院 こもれび
-    </a>
-    <a class="btn sm" href="#reserve">初回予約はこちら</a>
+    <a class="name" href="#">こもれび整体院</a>
+    <p class="head-tel">ご予約・お問い合わせ<b>000-0000-0000</b></p>
   </div>
 </header>
 
 <main>
-<section class="hero">
+<div class="hero">
   <div class="wrap">
     <div>
-      <span class="tag">デスクワークの方へ</span>
-      <h1>そのつらい肩こり、<br><em>「その場しのぎ」</em>で<br>終わらせていませんか？</h1>
-      <p>マッサージに通ってもすぐ戻ってしまう——。こもれびでは姿勢と生活習慣から原因を見つけ、「戻りにくい体」を一緒につくります。</p>
-      <div class="offer">
-        <a class="btn lg" href="#reserve">初回体験を予約する</a>
-        <div class="price"><s>通常 7,700円</s><br>初回 <b>3,980</b>円</div>
+      <h1>座りっぱなしの肩こりは、<br>座り方から変えられます。</h1>
+      <p class="lead">マッサージで一時的に楽になっても、翌週にはまた同じ場所が張ってくる。それは、毎日8時間の姿勢がそのままだからかもしれません。こもれび整体院では、施術とあわせて、デスクでの座り方や画面の高さまで一緒に見直します。</p>
+      <p class="hero-meta">初回はカウンセリング込みで<strong>60分・3,980円</strong>。〇〇駅 東口から徒歩3分。</p>
+    </div>
+
+    <form class="monshin" aria-labelledby="monshin-title" onsubmit="return false">
+      <h2 id="monshin-title">問診票<small>当てはまるものに印を</small></h2>
+      <p class="hint">来院時にも同じ内容をお聞きします。</p>
+      <label><input type="checkbox" name="s"><span>夕方になると、首から肩にかけて重くなる</span></label>
+      <label><input type="checkbox" name="s"><span>頭痛薬を飲む日が、月に何度かある</span></label>
+      <label><input type="checkbox" name="s"><span>朝起きたときから腰がだるい</span></label>
+      <label><input type="checkbox" name="s"><span>マッサージの効果が2〜3日しか続かない</span></label>
+      <label><input type="checkbox" name="s"><span>猫背と言われるが、直し方がわからない</span></label>
+      <output id="monshin-result" aria-live="polite">印をつけると、ここに結果が出ます。</output>
+      <a class="btn" href="#booking">初回の予約をする</a>
+    </form>
+  </div>
+</div>
+
+<section aria-labelledby="greeting">
+  <div class="wrap">
+    <h2 class="sec" id="greeting">院長より</h2>
+    <div class="greeting">
+      <div class="portrait">院長の写真<br>（撮影予定）</div>
+      <div>
+        <div class="prose">
+          <p>来院される方の多くは、事務職やエンジニアなど、一日のほとんどを座って過ごす方です。話を伺うと、椅子の高さが合っていなかったり、ノートパソコンを机にそのまま置いていたりと、痛みの原因が仕事の環境にあることが少なくありません。</p>
+          <p>施術で体をゆるめるのは、半分の仕事です。残りの半分は、職場や自宅で姿勢が崩れにくい状態をつくること。そのために初回は30分かけてお話を伺い、ご自分でできることを一緒に決めます。</p>
+          <p>強く押したり、ボキッと鳴らしたりする施術はしていません。整体が初めての方も安心してお越しください。</p>
+        </div>
+        <p class="sign">院長　木下 ○○</p>
       </div>
     </div>
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 300 300" style="position:absolute;inset:0">
-        <circle cx="150" cy="96" r="30" fill="#faf7f0"/>
-        <path d="M95 250c0-60 20-100 55-100s55 40 55 100" fill="#faf7f0"/>
-        <path d="M118 150c10 14 54 14 64 0" stroke="#e07a3f" stroke-width="6" fill="none" stroke-linecap="round"/>
-        <g fill="#cfe0d3"><circle cx="58" cy="70" r="10"/><circle cx="246" cy="120" r="14"/><circle cx="232" cy="220" r="8"/><circle cx="62" cy="200" r="12"/></g>
-      </svg>
-    </div>
   </div>
 </section>
 
-<section class="worries">
+<section aria-labelledby="flow">
   <div class="wrap">
-    <div class="head"><small>CHECK</small><h2>こんなお悩みありませんか？</h2></div>
-    <ul>
-      <li>夕方になると肩が石のように固まる</li>
-      <li>頭痛薬が手放せない</li>
-      <li>朝起きたときから腰が重い</li>
-      <li>マッサージの効果が2〜3日しか続かない</li>
-      <li>猫背を指摘されるが直し方がわからない</li>
-      <li>寝ても疲れがとれない</li>
-    </ul>
-    <p class="answer">ひとつでも当てはまったら、<br>原因は「姿勢のクセ」かもしれません。</p>
+    <h2 class="sec" id="flow">初回の流れ</h2>
+    <ol class="flow">
+      <li><div><h3>カウンセリング<span class="min">約30分</span></h3><p>お仕事の内容、座っている時間、痛む場所とタイミングを伺います。</p></div></li>
+      <li><div><h3>姿勢の確認<span class="min">約5分</span></h3><p>立った姿と座った姿を撮影し、体の傾きを一緒に画面で確認します。</p></div></li>
+      <li><div><h3>施術<span class="min">約20分</span></h3><p>原因になっている部分を中心に、やさしく調整します。</p></div></li>
+      <li><div><h3>セルフケアの説明<span class="min">約5分</span></h3><p>デスクでできるストレッチと、椅子や画面の調整方法をお伝えします。紙でもお渡しします。</p></div></li>
+    </ol>
   </div>
 </section>
 
-<section>
+<section aria-labelledby="price">
   <div class="wrap">
-    <div class="head"><small>FEATURES</small><h2>こもれびが選ばれる3つの理由</h2></div>
-    <div class="cards">
-      <div class="card"><div class="num">01</div><h3>30分のていねいなカウンセリング</h3><p>お仕事の姿勢や睡眠まで伺い、痛みの「本当の原因」を一緒に探します。</p></div>
-      <div class="card"><div class="num">02</div><h3>ボキボキしないやさしい施術</h3><p>強い力に頼らず、筋肉と関節を少しずつ整えます。施術が初めての方も安心です。</p></div>
-      <div class="card"><div class="num">03</div><h3>自宅でできるセルフケア指導</h3><p>デスクで1分でできるストレッチをお伝えし、通院回数を減らすことを目指します。</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="flow">
-  <div class="wrap">
-    <div class="head"><small>FLOW</small><h2>初回の流れ（約60分）</h2></div>
-    <div class="steps">
-      <div class="step"><h3>カウンセリング</h3><p>お悩みと生活習慣を伺います</p></div>
-      <div class="step"><h3>姿勢チェック</h3><p>写真で体の傾きを一緒に確認</p></div>
-      <div class="step"><h3>施術</h3><p>原因部分を中心にやさしく調整</p></div>
-      <div class="step"><h3>セルフケア</h3><p>ご自宅でのケア方法をお伝えします</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="menu">
-  <div class="wrap">
-    <div class="head"><small>MENU</small><h2>料金</h2></div>
-    <table>
-      <tr class="hl"><th>初回体験コース（60分）<span class="badge">おすすめ</span></th><td>3,980円</td></tr>
-      <tr><th>整体コース（45分）</th><td>6,600円</td></tr>
-      <tr><th>整体＋骨盤調整（60分）</th><td>7,700円</td></tr>
-      <tr><th>回数券（5回）</th><td>29,700円</td></tr>
+    <h2 class="sec" id="price">料金</h2>
+    <table class="price">
+      <tr class="first"><th>初回<small>カウンセリング・姿勢の確認・施術・セルフケア</small></th><td>3,980円</td></tr>
+      <tr><th>整体　45分</th><td>6,600円</td></tr>
+      <tr><th>整体と骨盤の調整　60分</th><td>7,700円</td></tr>
+      <tr><th>回数券　5回分<small>整体45分を5回。有効期限は6か月です。</small></th><td>29,700円</td></tr>
     </table>
-    <p class="note">表示はすべて税込です。初回体験は1名さま1回限りとなります。</p>
+    <p class="price-note">すべて税込です。回数券をおすすめするのは、2回目以降に効果を感じていただけた方だけです。</p>
   </div>
 </section>
 
-<section class="voice">
+<section aria-labelledby="hours">
   <div class="wrap">
-    <div class="head"><small>VOICE</small><h2>お客さまの声</h2></div>
+    <h2 class="sec" id="hours">診療時間</h2>
+    <table class="hours">
+      <thead><tr><th scope="col"></th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th><th scope="col">日</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">10:00〜13:00</th><td>○</td><td>○</td><td class="off">休</td><td>○</td><td>○</td><td>○</td><td>○</td></tr>
+        <tr><th scope="row">15:00〜20:00</th><td>○</td><td>○</td><td class="off">休</td><td>○</td><td>○</td><td>○</td><td class="off">休</td></tr>
+      </tbody>
+    </table>
+    <p class="hours-note">最終受付は終了の1時間前です。仕事帰りの方は、平日19時まで受け付けています。</p>
+  </div>
+</section>
+
+<section aria-labelledby="voice">
+  <div class="wrap">
+    <h2 class="sec" id="voice">通っている方の声</h2>
     <div class="voices">
-      <blockquote>在宅勤務になってから肩こりがひどく、頭痛も頻繁でした。教わったストレッチを続けて、今は頭痛薬をほとんど飲んでいません。<cite>30代・会社員の方</cite></blockquote>
-      <blockquote>整体は痛いイメージでしたが、とてもやさしい施術で驚きました。説明がわかりやすく、なぜ痛むのか納得できました。<cite>40代・事務職の方</cite></blockquote>
-      <blockquote>長時間の運転で腰がつらかったのですが、座り方を見直したら楽になりました。月1回のメンテナンスで通っています。<cite>50代・自営業の方</cite></blockquote>
+      <blockquote><p>在宅勤務になってから頭痛が増えていました。画面の位置を変えて、教わったストレッチを続けたら、薬を飲む日がほとんどなくなりました。</p><cite>30代・会社員</cite></blockquote>
+      <blockquote><p>整体は痛いものだと思っていましたが、まったく違いました。なぜ痛むのかを図で説明してもらえて、納得して通えています。</p><cite>40代・経理事務</cite></blockquote>
+      <blockquote><p>運転の多い仕事で腰がつらかったので、座り方を見てもらいました。今は月に1回、点検のつもりで通っています。</p><cite>50代・配送業</cite></blockquote>
     </div>
-    <p class="disclaimer">※ サンプル用の架空の口コミです。効果には個人差があります。</p>
+    <p class="voices-note">サンプル用の架空の声です。感じ方には個人差があります。</p>
   </div>
 </section>
 
-<section class="faq">
+<section aria-labelledby="faq">
   <div class="wrap">
-    <div class="head"><small>FAQ</small><h2>よくあるご質問</h2></div>
-    <details><summary>服装はどうすればいいですか？</summary><p>動きやすい服装でお越しください。着替えのご用意もあります。</p></details>
-    <details><summary>保険は使えますか？</summary><p>当院の施術は保険適用外の自費施術となります。</p></details>
-    <details><summary>どのくらいの頻度で通えばいいですか？</summary><p>状態によりますが、最初は週1回、楽になってきたら月1〜2回のメンテナンスをおすすめしています。無理な勧誘は一切いたしません。</p></details>
-    <details><summary>当日予約はできますか？</summary><p>空きがあれば可能です。Web予約で当日の空き状況をご確認いただけます。</p></details>
+    <h2 class="sec" id="faq">よくある質問</h2>
+    <dl class="faq">
+      <dt>どんな服装で行けばいいですか。</dt>
+      <dd>動きやすい服装でお越しください。お着替えも用意しています。</dd>
+      <dt>健康保険は使えますか。</dt>
+      <dd>使えません。すべて自費での施術です。</dd>
+      <dt>どのくらいの間隔で通えばいいですか。</dt>
+      <dd>最初の1か月は週に1回、楽になってきたら月に1〜2回が目安です。通う回数はご本人と相談して決めます。</dd>
+      <dt>当日でも予約できますか。</dt>
+      <dd>空きがあれば可能です。お電話でお問い合わせください。</dd>
+    </dl>
   </div>
 </section>
 
-<section class="cta" id="reserve">
+<section class="booking" id="booking" aria-labelledby="booking-title">
   <div class="wrap">
-    <h2>まずは初回体験から</h2>
-    <p>毎月10名さま限定で、初回体験を 3,980円 でご案内しています。</p>
-    <a class="btn lg" href="#reserve">Webで24時間予約する</a>
-    <p class="tel">お電話でのご予約：000-0000-0000（受付 10:00〜20:00）</p>
+    <h2 class="sec" id="booking-title">初回の予約</h2>
+    <p>初回はカウンセリング込みで60分、3,980円です。予約の画面で、空いている日時を選んでください。</p>
+    <a class="btn" href="#booking">予約の画面を開く</a>
+    <p class="tel">お電話でも受け付けています　<b>000-0000-0000</b><br>10:00〜20:00（水曜定休）</p>
   </div>
 </section>
 
-<section class="access">
+<section class="access" aria-labelledby="access">
   <div class="wrap">
     <div>
-      <div class="head" style="text-align:left;margin-bottom:24px"><small>ACCESS</small><h2>アクセス</h2></div>
+      <h2 class="sec" id="access">アクセス</h2>
       <dl>
-        <dt>住所</dt><dd>〇〇県〇〇市〇〇町1-2-3 こもれびビル2F</dd>
-        <dt>最寄駅</dt><dd>〇〇駅 東口から徒歩3分</dd>
-        <dt>営業時間</dt><dd>10:00〜20:00（最終受付 19:00）</dd>
-        <dt>定休日</dt><dd>水曜日</dd>
+        <dt>住所</dt><dd>〇〇県〇〇市〇〇町1-2-3　こもれびビル2階</dd>
+        <dt>最寄駅</dt><dd>〇〇駅 東口から徒歩3分。1階はパン屋です。</dd>
+        <dt>駐車場</dt><dd>ありません。近くのコインパーキングをご利用ください。</dd>
       </dl>
     </div>
-    <div class="map">Googleマップ埋め込み位置</div>
+    <div class="map">地図（Googleマップを埋め込み）</div>
   </div>
 </section>
 </main>
 
-<footer>© 整体院 こもれび（制作サンプル）</footer>
-<div class="fixed-cta"><a class="btn" href="#reserve">初回 3,980円で予約する</a></div>
+<footer><div class="wrap">こもれび整体院（制作サンプル）</div></footer>
+<div class="sticky-book"><a class="btn" href="#booking">初回の予約をする</a></div>
+
+<script>
+(() => {
+  const boxes = document.querySelectorAll('.monshin input');
+  const out = document.getElementById('monshin-result');
+  const msg = n => n === 0
+    ? '印をつけると、ここに結果が出ます。'
+    : n <= 2
+      ? `<b>${n}つ</b>当てはまります。早めに座り方を見直すと、こじらせずに済むことが多いです。`
+      : `<b>${n}つ</b>当てはまります。仕事の姿勢が原因になっている可能性があります。初回のカウンセリングで一緒に確かめましょう。`;
+  boxes.forEach(b => b.addEventListener('change', () => {
+    out.innerHTML = msg([...boxes].filter(x => x.checked).length);
+  }));
+})();
+</script>
 </body>
 </html>
