@@ -40,7 +40,7 @@ header p{color:var(--sub);margin-top:4px}
 .sheet{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
 .sheet th,.sheet td{border:1px solid var(--grid);padding:6px 8px;text-align:right}
 .sheet th{background:var(--head);font-weight:700;text-align:center}
-.sheet td:first-child{text-align:left}
+.sheet td:first-child{text-align:left;white-space:nowrap}
 .sheet tr.total td{font-weight:700;border-top:2px solid var(--ink)}
 .flags{margin-top:16px;font-size:13px}
 .flags li{list-style:none;padding:4px 0;border-bottom:1px dashed var(--grid)}
@@ -52,8 +52,8 @@ section h2{font-size:21px;letter-spacing:.04em;padding-bottom:10px;border-bottom
 
 .works{display:grid;gap:40px}
 .work{display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start}
-.work img{width:100%;border:1px solid var(--grid);display:block}
-.work .noimg{aspect-ratio:4/3;border:1px solid var(--grid);background:var(--head);display:grid;place-items:center;font-size:13px;color:var(--sub);text-align:center;padding:12px}
+.work img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;border:1px solid var(--grid);display:block}
+.work.text{grid-template-columns:1fr}
 .work h3{font-size:18px}
 .work p{margin-top:6px;max-width:36em}
 .work .links{margin-top:10px;font-size:15px}
@@ -124,11 +124,10 @@ footer{margin-top:72px;padding:24px 0 40px;border-top:1px solid var(--grid);font
 <section aria-labelledby="works">
   <h2 id="works">作ったもの</h2>
   <div class="works">
-    <div class="work">
-      <div class="noimg">売上CSV 統合・集計ツール<br>（出力例は上の表）</div>
+    <div class="work text">
       <div>
         <h3>売上CSVの統合・集計ツール</h3>
-        <p>フォルダに入れたCSVを読み込み、文字コード・列名・日付の書き方の違いをそろえてから、月別・店舗別の集計表、商品ランキング、グラフを1つのExcelファイルに出力します。ダブルクリックで実行できるようにしています。</p>
+        <p>ページ上部の例を出力したツールです。フォルダに入れたCSVを読み込み、文字コード・列名・日付の書き方の違いをそろえてから、月別・店舗別の集計表、商品ランキング、グラフを1つのExcelファイルに出力します。ダブルクリックで実行できるようにしています。</p>
         <p class="stack">Python ／ openpyxl</p>
         <p class="links"><a href="https://github.com/Inabe2929/portfolio/tree/main/csv-report-tool">コードと説明を見る</a><a href="https://github.com/Inabe2929/portfolio/raw/main/csv-report-tool/demo_report.xlsx">出力されたExcelを見る</a></p>
       </div>
